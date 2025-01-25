@@ -50,13 +50,11 @@
   flex-direction: column;
   gap: 50px;
 }
-.container {
-}
+
 .cards__item {
   list-style: none;
 }
-.cards__item-body {
-}
+
 .cards__item-title {
   font-size: 18px;
   font-weight: 700;
@@ -83,6 +81,11 @@
   -webkit-text-stroke: 1px #ffffff;
   color: #000000;
   opacity: 0.5;
+}
+@supports (-webkit-text-stroke: 1px #ffffff) {
+  .cards__item-tag {
+    -webkit-text-stroke: 1px #ffffff;
+  }
 }
 .cards__item-img {
   position: absolute;
@@ -111,7 +114,7 @@
   filter: opacity(25%);
 }
 .saturate {
-  filter: saturate(30%);
+  filter: contrast(175%) brightness(3%);
 }
 .cards__item-content {
   border: 2px solid #000000;
@@ -137,26 +140,14 @@
   justify-content: flex-end;
   gap: 12px;
 }
-.cards__item-btn {
-}
+
 .card__icon-button {
   background: none;
   border: none;
   width: 27px;
   height: 24px;
 }
-.like-icon {
-}
-.heart {
-}
-.contour {
-}
-.main-body {
-}
-.core {
-}
-.sparks {
-}
+
 .card__like-button {
   border: 2px solid #000000;
   width: 130px;
