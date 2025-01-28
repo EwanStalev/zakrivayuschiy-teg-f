@@ -1,7 +1,6 @@
-
 :root {
   --font-main: "Inter", sans-serif;
-  --font-accent: "PressStart2P";
+  --font-accent: "PressStart2P", sans-serif;
   --content-weight: 400;
   --title-weight: 700;
   --bg-image: repeating-linear-gradient(
