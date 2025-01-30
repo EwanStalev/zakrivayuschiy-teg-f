@@ -46,14 +46,15 @@
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
+
+.like-icon {
+  min-width: 39px;
+  min-height: 36px;
+}
 .cards {
   display: flex;
   flex-direction: column;
   gap: 50px;
-}
-
-.cards__item {
-  list-style: none;
 }
 
 .cards__item-title {
@@ -80,7 +81,6 @@
   font-weight: 400;
   line-height: 14px;
   text-shadow: 1px 1px #ffffff;
-  -webkit-text-stroke: 1px #ffffff;
   color: #000000;
   opacity: 0.5;
 }
@@ -91,7 +91,6 @@
   }
 }
 .cards__item-img {
-  
   width: 100%;
   height: 100%;
 }
@@ -264,15 +263,20 @@
   .footer-btn {
     flex-direction: column;
   }
-  .footer__btn-icon{
+  .footer__btn-icon {
     width: 28px;
     height: 28px;
   }
-  .cards__item-tag{
+  .cards__item-tag {
     right: 13px;
   }
 
-  .dialog{
+  .dialog {
     padding: 30px 42px;
+  }
+
+  .dialog-icon {
+    min-width: 39px;
+    min-height: 39px;
   }
 }
